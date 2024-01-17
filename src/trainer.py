@@ -182,7 +182,8 @@ def train(config):
     # dataloaders
     train_loader, valid_loader, class_weights = dataloaders(config = config)
     config.class_weights = class_weights
-    print(f'Class weights: {class_weights}')
+    if config.use_class_weights:
+        print(f'Class weights: {class_weights}')
     
     # define model
     model = BaselineConvNet(config = config, device = device)

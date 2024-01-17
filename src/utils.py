@@ -145,12 +145,16 @@ def augment_data(config, LABEL_TO_INDEX_MAP):
         datapath = os.path.join(parent_path, label)
         output_dir = os.path.join(config.aug_dir, label)
         os.makedirs(output_dir, exist_ok = True)
-        if len(os.listdir(output_dir)) != config.aug_size + len(os.listdir(datapath)):
+        if len(os.listdir(output_dir)) != (config.aug_size + len(os.listdir(datapath))):
             shutil.rmtree(output_dir)
             ## Augment data
             p = Augmentor.Pipeline(datapath, output_directory = output_dir)
-            p.rotate(probability=0.7, max_left_rotation=10, max_right_rotation=10)
+            p.rotate(probability=0.5, max_left_rotation=10, max_right_rotation=10)
             p.zoom(probability=0.5, min_factor=1.1, max_factor=1.5)
+            # p.flip_left_right(probability=0.3)
+            # p.flip_top_bottom(probability=0.3)
+            # p.random_brightness(probability = 0.5, min_factor=0.4, max_factor=0.9)
+            # p.random_distortion(probability=0.5, grid_width=7, grid_height=8, magnitude=9)
             p.sample(config.aug_size)
             p.process()
             clear_output()          # clear output in Jupyter notebook

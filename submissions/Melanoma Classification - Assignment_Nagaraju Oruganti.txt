@@ -1,7 +1,5 @@
-Github link: https://github.com/nagaraju-oruganti/Housing-Aus
+Github link: https://github.com/nagaraju-oruganti/Melanoma-Detection
 
-Subjective questions: https://github.com/nagaraju-oruganti/Housing-Aus/blob/master/docs/Solution_subject_questions.pdf
+EDA: https://github.com/nagaraju-oruganti/Melanoma-Detection/blob/main/notebooks/eda.ipynb
 
-EDA: https://github.com/nagaraju-oruganti/Housing-Aus/blob/master/notebooks/eda.ipynb
-
-Modeling: https://github.com/nagaraju-oruganti/Housing-Aus/blob/master/notebooks/modeling.ipynb
+Modeling: https://github.com/nagaraju-oruganti/Melanoma-Detection/blob/main/notebooks/trainer.ipynb
