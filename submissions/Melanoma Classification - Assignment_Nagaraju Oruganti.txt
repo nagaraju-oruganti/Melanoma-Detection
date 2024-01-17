@@ -1,0 +1,7 @@
+Github link: https://github.com/nagaraju-oruganti/Housing-Aus
+
+Subjective questions: https://github.com/nagaraju-oruganti/Housing-Aus/blob/master/docs/Solution_subject_questions.pdf
+
+EDA: https://github.com/nagaraju-oruganti/Housing-Aus/blob/master/notebooks/eda.ipynb
+
+Modeling: https://github.com/nagaraju-oruganti/Housing-Aus/blob/master/notebooks/modeling.ipynb
